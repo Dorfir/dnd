@@ -1,0 +1,7 @@
+<div id="liste-recap-perso">
+    <app-recap-perso 
+        *ngFor="let perso of persos"
+        [perso]="perso"
+        (clickedEvent)="childClicked($event)"
+    ></app-recap-perso>
+</div>

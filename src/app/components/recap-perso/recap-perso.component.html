@@ -1,0 +1,7 @@
+<div class="recap-container" (click)="recapClicked(perso.id)">
+    Name: {{perso.name}}
+    <br>
+    Force: {{perso.caracs[0]}}
+    <br>
+    <a [routerLink]="['/feuille',perso.id]">Détails</a>
+</div>

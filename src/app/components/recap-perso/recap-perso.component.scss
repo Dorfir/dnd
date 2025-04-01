@@ -1,0 +1,12 @@
+.recap-container {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    border: 1px solid rgb(150, 122, 122);
+    cursor: pointer;
+}
+.recap-container:hover {
+    background-color: #cccccc;
+
+}
