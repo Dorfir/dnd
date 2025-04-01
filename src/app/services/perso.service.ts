@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { PersoModel } from '../interfaces/perso-model';
+import { CaracModel } from '../interfaces/carac-model';
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +25,12 @@ export class PersoService {
     },
   ]
 
+  caracModel: CaracModel = {
+    names: [
+      "force", "agilité", "constitution", "sagesse", "intelligence", "charisme"
+    ]
+  }
+
   constructor() { }
 
   getAllPersos() : PersoModel[] {
@@ -34,5 +41,8 @@ export class PersoService {
     return this.persoList.find((elem) => elem.id == id)
   }
 
+  getCaracModel() : CaracModel {
+    return this.caracModel
+  }
   
 }
